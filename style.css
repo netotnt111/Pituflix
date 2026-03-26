@@ -1,66 +1,66 @@
 /* Estilos inspirados na Netflix */
 
 body {
-    background-color: #000;
-    color: #fff;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #000; /* Define a cor de fundo do corpo da página como preto */
+    color: #fff; /* Define a cor do texto como branco */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Define a família de fontes, com alternativas caso a primeira não esteja disponível */
+    margin: 0; /* Remove todas as margens externas do elemento */
+    padding: 0; /* Remove todo o preenchimento interno do elemento */
+    height: 100vh; /* Define a altura do elemento como 100% da altura da viewport (tela visível) */
+    display: flex; /* Usa o modelo de layout flexbox para organizar os filhos */
+    justify-content: center; /* Centraliza os itens horizontalmente no container flex */
+    align-items: center; /* Centraliza os itens verticalmente no container flex */
 }
 
 main {
-    text-align: center;
-    max-width: 800px;
-    width: 100%;
+    text-align: center; /* Alinha o texto ao centro */
+    max-width: 800px; /* Define a largura máxima do elemento como 800 pixels */
+    width: 100%; /* Define a largura como 100% do container pai */
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    font-weight: 300;
+    font-size: 3rem; /* Define o tamanho da fonte como 3 vezes o tamanho padrão (geralmente 48px) */
+    margin-bottom: 2rem; /* Define a margem inferior como 2 vezes o tamanho padrão (geralmente 32px) */
+    font-weight: 300; /* Define o peso da fonte como leve (300) */
 }
 
 .profiles {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    display: flex; /* Usa o modelo de layout flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 2rem; /* Define o espaço entre os itens flex como 2 vezes o tamanho padrão (geralmente 32px) */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
 }
 
 .profile {
-    text-decoration: none;
-    color: #fff;
-    transition: transform 0.3s ease;
+    text-decoration: none; /* Remove qualquer decoração de texto, como sublinhado */
+    color: #fff; /* Define a cor do texto como branco */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para a propriedade transform ao longo de 0.3 segundos */
 }
 
 .profile:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Aumenta o tamanho do elemento em 10% quando o mouse passa sobre ele */
 }
 
 .profile figure {
-    margin: 0;
-    text-align: center;
+    margin: 0; /* Remove todas as margens */
+    text-align: center; /* Alinha o texto ao centro */
 }
 
 .profile img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid transparent;
-    transition: border-color 0.3s ease;
+    width: 120px; /* Define a largura da imagem como 120 pixels */
+    height: 120px; /* Define a altura da imagem como 120 pixels */
+    border-radius: 50%; /* Arredonda as bordas para criar um círculo */
+    object-fit: cover; /* Ajusta a imagem para cobrir o container sem distorcer, cortando se necessário */
+    border: 3px solid transparent; /* Adiciona uma borda de 3 pixels sólida e transparente */
+    transition: border-color 0.3s ease; /* Adiciona uma transição suave para a cor da borda ao longo de 0.3 segundos */
 }
 
 .profile:hover img {
-    border-color: #fff;
+    border-color: #fff; /* Muda a cor da borda para branco quando o mouse passa sobre o perfil */
 }
 
 .profile figcaption {
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: 400;
+    margin-top: 0.5rem; /* Define a margem superior como 0.5 vezes o tamanho padrão (geralmente 8px) */
+    font-size: 1.2rem; /* Define o tamanho da fonte como 1.2 vezes o tamanho padrão (geralmente 19.2px) */
+    font-weight: 400; /* Define o peso da fonte como normal (400) */
 }
