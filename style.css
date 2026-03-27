@@ -64,3 +64,57 @@ h1 {
     font-size: 1.2rem; /* Define o tamanho da fonte como 1.2 vezes o tamanho padrão (geralmente 19.2px) */
     font-weight: 400; /* Define o peso da fonte como normal (400) */
 }
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Reduz o tamanho da fonte para telas menores */
+        margin-bottom: 1.5rem; /* Ajusta a margem inferior */
+    }
+
+    .profiles {
+        flex-direction: column; /* Empilha os perfis verticalmente em telas pequenas */
+        gap: 1.5rem; /* Reduz o espaço entre os perfis */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .profile img {
+        width: 100px; /* Reduz a largura da imagem */
+        height: 100px; /* Reduz a altura da imagem */
+    }
+
+    .profile figcaption {
+        font-size: 1rem; /* Reduz o tamanho da fonte do nome do perfil */
+    }
+
+    main {
+        max-width: 90%; /* Ajusta a largura máxima para ocupar mais espaço em telas pequenas */
+        padding: 0 1rem; /* Adiciona preenchimento lateral */
+    }
+}
+
+/* Responsividade para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem; /* Tamanho intermediário para tablets */
+        margin-bottom: 1.8rem;
+    }
+
+    .profiles {
+        gap: 1.8rem; /* Ajusta o espaço entre perfis */
+    }
+
+    .profile img {
+        width: 110px; /* Tamanho intermediário para imagens */
+        height: 110px;
+    }
+
+    main {
+        max-width: 700px; /* Ajusta a largura máxima */
+    }
+}
+
+/* Responsividade para desktops grandes */
+@media (min-width: 1025px) {
+    /* Mantém os estilos originais para desktops */
+}
